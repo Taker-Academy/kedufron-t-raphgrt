@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: ('../fonts/Roboto-Light.ttf') format('truetype');
+}
+
+html * {
+    font-family: "Roboto";
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cat_button {
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat_list {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.cat_list li {
+    cursor: pointer;
+    margin-bottom: 5px;
+}

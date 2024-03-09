@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: "Roboto", sans-serif;
-    src: ('../fonts/Roboto-Light.ttf') format('truetype');
+    src: ('../../fonts/Roboto-Light.ttf') format('truetype');
 }
 
 html * {
@@ -13,6 +13,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: #f2f2f2;
 }
 
 header div {
@@ -38,4 +39,28 @@ header div {
 .cat_list li {
     cursor: pointer;
     margin-bottom: 5px;
+}
+
+.search_zone {
+    display: flex;
+    max-height: fit-content;
+    align-items: center;
+    border: none;
+}
+
+.search_zone input {
+    min-height: fit-content;
+    border: none;
+}
+
+.search_zone i {
+    display: flex;
+    background-color: #0165fc;
+    color: white;
+    min-height: 30px;
+    min-width: 30px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    justify-content: center;
+    align-items: center;
 }

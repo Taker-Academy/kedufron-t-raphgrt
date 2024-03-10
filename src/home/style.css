@@ -4,3 +4,25 @@ h1 {
     text-decoration: none;
     color: #F79817;
 }
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkslategray;
+}
+
+.items_emplacement {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: darkslategray;
+}

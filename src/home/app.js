@@ -1,29 +1,31 @@
-init_api();
-function init_api() {
-    const url = "https://api.kedufront.juniortaker.com/item/";
-    const api_data = fetch(url)
-        .then(reponse => {
-            if (reponse.status === 400) {
-                throw new Error("Validation Error !");
-            }
-            if (reponse.status === 404) {
-                throw new Error("404, Not found !")
-            }
-            if (reponse.status === 200) {
+const url = "https://api.kedufront.juniortaker.com/";
+
+function get_data() {
+
+    let elements = -1;
+    const api_data = axios.get(url + "item/")
+        .then(response => {
+            console.log(response);
+            if (response.status === 200) {
                 console.log("API works !");
-                return reponse.json();
+                return response.data;
+            } else {
+                console.error("HTTP GET error");
+                elements = -1;
             }
         })
+    return elements;
 }
 
-function create_element(id, name, price, img) {
-    let new_elem = {
-        id: id,
-        name: name,
-        price: price,
-        createdIn: new Date().getDate(),
-        image: img,
-        amount: 1
-    };
-    return new_elem;
+function create_product() {
+    let product = get_data();
+
+    if (product) {
+        console.log("test");
+    }
+    for (let x = 0; x < product.length; x++) {
+        console.log(product[x]);
+    }
 }
+
+create_product();

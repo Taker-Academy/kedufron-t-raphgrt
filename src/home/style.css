@@ -83,6 +83,26 @@ header h1 {
     align-items: center;
 }
 
+body {
+    background-color: #ECF0F1;
+}
+
+h2 {
+    text-decoration: none;
+}
+
+.shop_show {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.article_container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
 footer {
     background: #4D4239;
     align-items: flex-end;

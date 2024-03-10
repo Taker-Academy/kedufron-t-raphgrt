@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Jackie Shop</title>
+        <title>My E-Shop</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://kit.fontawesome.com/5ec3fb178c.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="app.js"></script>
     </head>
     <body>
         <header>
             <div class="left_header">
                 <a href="index.html">
-                    <h1>Jackie Shop</h1>
+                    <h1>My E-Shop</h1>
                 </a>
             </div>
             <div class="center_header">
-                <div class="cat_button">
-                    <button>Catégories</button>
-                    <ul class="cat_list">
-                        <li>Pare chocs</li>
-                        <li>Bas de Caisse</li>
-                        <li>Ailerons</li>
-                        <li>Jantes Alus</li>
-                    </ul>
-                </div>
                 <form class="search_zone">
                     <input type="search" placeholder="Chercher un produit" value="Chercher un produit" style="color: white;">
                     <i class="fa-solid fa-magnifying-glass" id="loupe"></i>
@@ -33,90 +26,8 @@
                 <button id="register_button">S'inscrire</button>
             </div>
         </header>
-        <h2>Pare chocs</h2>
-        <div class="shop_show">
-            <div class="article_container">
-                <img src="../../assets/pare_chocs/Pare_choc_1.jpeg">
-                <h3>Pare choc GROSDUR&reg</h3>
-                <p>Un imposant pare choc pour plus de virilité</p>
-                <button>Ajouter</button>
-            </div>
-            <div class="article_container">
-                <img src="../../assets/pare_chocs/Pare_choc_2.jpg">
-                <h3>Pare choc TARPÉ&reg</h3>
-                <p>Un gros pare choc pour plus de réussite</p>
-                <button>Ajouter</button>
-            </div>
-            <div class="article_container">
-                <img src="../../assets/pare_chocs/Pare_choc_3.jpg">
-                <h3>Pare choc LONGFIN&reg</h3>
-                <p>Un pare choc pour taper dedans</p>
-                <button>Ajouter</button>
-            </div>
-        </div>
-        <h2>Bas de Caisse</h2>
-        <div class="shop_show">
-            <div class="article_container">
-                <img src="../../assets/bas_de_caisse/bas_1.jpeg">
-                <h3>Bas de caisse racing 1</h3>
-                <p>Un imposant bas de caisse pour plus de virilité</p>
-                <button>Ajouter</button>
-            </div>
-            <div class="article_container">
-                <img src="../../assets/bas_de_caisse/bas_2.jpg">
-                <h3>Bas de caisse racing 2</h3>
-                <p>Un imposant bas de caisse pour plus de virilité</p>
-                <button>Ajouter</button>
-            </div>
-            <div class="article_container">
-                <img src="../../assets/bas_de_caisse/bas_3.png">
-                <h3>Bas de caisse racing 3</h3>
-                <p>Un imposant bas de caisse pour plus de virilité</p>
-                <button>Ajouter</button>
-            </div>
-        </div>
-        <h2>Ailerons</h2>
-        <div class="shop_show">
-            <div class="article_container">
-                <img src="../../assets/ailerons/Aileron_1.jpg">
-                <h3>Aileron racing 1</h3>
-                <p>Un imposant Aileron pour plus de virilité</p>
-                <button>Ajouter</button>
-            </div>
-            <div class="article_container">
-                <img src="../../assets/ailerons/Aileron_2.jpg">
-                <h3>Aileron racing 2</h3>
-                <p>Un imposant Aileron pour plus de virilité</p>
-                <button>Ajouter</button>
-            </div>
-            <div class="article_container">
-                <img src="../../assets/ailerons/Aileron_3.jpg">
-                <h3>Aileron racing 3</h3>
-                <p>Un imposant Aileron pour plus de virilité</p>
-                <button>Ajouter</button>
-            </div>
-        </div>
-        <h2>Jantes Alus</h2>
-        <div class="shop_show">
-            <div class="article_container">
-                <img src="../../assets/jantes/jante_1.jpg">
-                <h3>Jante alu racing 1</h3>
-                <p>Un imposant Jante alu pour plus de virilité</p>
-                <button>Ajouter</button>
-            </div>
-            <div class="article_container">
-                <img src="../../assets/jantes/Jante_2.jpg">
-                <h3>Jante alu racing 2</h3>
-                <p>Un imposant Jante alu pour plus de virilité</p>
-                <button>Ajouter</button>
-            </div>
-            <div class="article_container">
-                <img src="../../assets/jantes/Jante_3.jpg">
-                <h3>Jante alu racing 3</h3>
-                <p>Un imposant Jante alu pour plus de virilité</p>
-                <button>Ajouter</button>
-            </div>
-        </div>
+        <h2>Nos articles :</h2>
+
         <footer>
             <div class="footer-container">
                 <div class="footer-column">

@@ -14,6 +14,10 @@ header {
     background-color: darkslategray;
 }
 
+footer * {
+    text-decoration: none;
+}
+
 .items_emplacement {
     display: flex;
     flex-direction: row;
